@@ -1,0 +1,646 @@
+body {
+  background-color: #f8f8f8;
+}
+/* General Navbar Styles */
+.navbar-custom {
+  background-color: #1874a4;
+}
+.navbar {
+  padding: 15px 250px !important;
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+
+.flag-icon {
+  height: 24px;
+}
+.icons {
+  color: #fff;
+  margin-left: 10px;
+}
+.icons:hover {
+  color: #ff8c00;
+}
+.navbar-brand {
+  background-color: white;
+  padding: 0 12px;
+}
+
+/* Social Media Button */
+.social-media-button {
+  border: 1px solid white;
+  width: 24px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Phone Container */
+.phone-container ul {
+  margin: 0;
+  padding: 0;
+}
+.phone-container {
+  margin-right: 24px;
+}
+
+/* Search Form */
+.form-control {
+  margin: 0 !important;
+  border-radius: 0;
+  height: 40px;
+  padding-left: 10px;
+}
+.btn-search {
+  background-color: #ff8c00;
+  height: 40px;
+  border-radius: 0;
+  color: white;
+}
+
+/* Second Navigation Menu */
+.second-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+}
+.second-nav .nav-item .nav-link {
+  margin: 0 0;
+  padding: 0;
+  font-size: 17px;
+  font-family: Rubik;
+  color: black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero-section {
+  background-image: url("../assets/hero-background.png");
+  background-size: cover;
+  background-position: center center !important;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 250px 0px 250px;
+}
+
+.hero-section h2 {
+  color: #000;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-section h3 {
+  color: #1176ae;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hero-section img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-indicators {
+  display: none;
+  position: absolute;
+  bottom: 20px; /* Adjust the positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  margin: 0 !important;
+}
+
+.carousel-indicators li {
+  width: 60px !important;
+  height: 6px !important;
+  background-color: white;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.carousel-indicators li::marker {
+  content: none;
+}
+.carousel-indicators .active {
+  background-color: orangered;
+}
+/* Customize carousel-control (Next/Prev) buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  border-radius: 50%;
+  background-color: #f16126;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 150px;
+  opacity: 100%;
+}
+.carousel-control-prev-icon,
+carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.categories-container {
+  width: 100%;
+  padding: 12px 250px;
+
+  h3 {
+    color: #000;
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+  p {
+    color: #000;
+
+    text-align: center;
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+  }
+
+  .categories-display {
+    display: flex;
+    gap: 12px;
+
+    .vertical-display {
+      background-image: url("../assets/vertical-layout.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .categories-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .horizental-display {
+      display: flex;
+      background-image: url("../assets/horizental-layout.png");
+      background-size: cover;
+      align-items: center;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      width: 100% !important;
+      padding: 32px;
+
+      img {
+        width: 30%;
+        height: auto;
+      }
+      p {
+        color: #000;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.26px;
+        text-transform: uppercase;
+      }
+    }
+    .horizental-display-2 {
+      img {
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.mobile-collections-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  padding: 12px 250px 48px 250px;
+
+  #laptop-background {
+    background-image: url("../assets/macbook-background.png") !important;
+  }
+  .first-card {
+    background-image: url("../assets/iphone-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-direction: column;
+    padding: 16px 60px 16px 16px;
+    p {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.54px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: #1176ae;
+      font-family: Rubik;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.44px;
+    }
+
+    .main-button {
+      display: flex;
+      width: 153px;
+      height: 40px;
+      padding: 7px 0px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 1px solid #f16126;
+      background: #f16126;
+      a {
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .cards-collection {
+    width: 100%;
+    h3 {
+      color: #000;
+      text-align: center;
+      font-family: Rubik;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.44px;
+      text-transform: uppercase;
+    }
+  }
+  .cards {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+    padding: 0px 12px;
+    gap: 2%;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .category {
+        h3 {
+          color: #000;
+          text-align: center;
+          font-family: Rubik;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 1.44px;
+          text-transform: uppercase;
+        }
+      }
+      .description {
+        color: #000;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.63px;
+        text-transform: uppercase;
+      }
+      .price {
+        color: #1176ae;
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+      }
+      .old-price {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: Rubik;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.45px;
+        text-decoration: line-through;
+        text-transform: uppercase;
+      }
+      .bi-cart {
+        font-size: 24px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 230px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a img {
+  width: 16px;
+  height: 16px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #ff7f00;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #ff5500;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #111;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom img {
+  margin-top: 10px;
+}
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .navbar {
+    padding: 15px 160px !important;
+  }
+  .hero-section {
+    padding: 24px 160px 0px 160px;
+  }
+
+  .categories-container {
+    padding: 12px 160px;
+  }
+
+  .mobile-collections-container {
+    padding: 12px 160px 48px 160px;
+  }
+  .footer {
+    padding: 40px 140px;
+  }
+}
+@media (max-width: 1400px) {
+  .navbar {
+    padding: 15px 72px !important;
+  }
+  .hero-section {
+    padding: 24px 72px 0px 72px;
+  }
+
+  .categories-container {
+    padding: 12px 72px;
+  }
+
+  .mobile-collections-container {
+    padding: 12px 72px 48px 72px;
+  }
+  .footer {
+    padding: 40px 52px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 48px !important;
+    form {
+      width: 150px;
+    }
+  }
+  .social-media-container {
+    width: auto;
+    .nav-item {
+      width: 30px !important;
+      height: auto;
+    }
+  }
+  .phone-container {
+    img {
+      width: 20px;
+    }
+    .nav-link {
+      font-size: 12px;
+    }
+  }
+  .second-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+  }
+  .hero-section {
+    padding: 24px 48px 0px 48px;
+    background-size: cover;
+  }
+
+  .hero-section h2 {
+    color: #000;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero-section h3 {
+    color: #1176ae;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  .carousel-indicators li {
+    width: 60px !important;
+    height: 4px !important;
+  }
+  .categories-container {
+    padding: 12px 48px;
+
+    h3 {
+      font-size: 24px;
+    }
+    .categories-display .vertical-display,
+    .horizental-display {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .mobile-collections-container {
+    padding: 12px 48px 48px 48px;
+  }
+  .footer {
+    padding: 40px 28px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 150px; /* Reduce logo size for smaller screens */
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .second-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
